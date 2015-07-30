@@ -1,5 +1,9 @@
-export function initialize(/* container, application */) {
-  // application.inject('route', 'foo', 'service:foo');
+import Mapbox from '../services/mapbox';
+
+export function initialize(registry, application) {
+  registry.register("mapbox:main", Mapbox);
+  application.inject('route', 'mapbox', 'mapbox:main');
+  application.inject('controller', 'mapbox', 'mapbox:main');
 }
 
 export default {
