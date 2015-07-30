@@ -19,6 +19,12 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['mapbox'] = {
+    accessToken: '',
+    mapId: '',
+    mapTag: 'map'
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
