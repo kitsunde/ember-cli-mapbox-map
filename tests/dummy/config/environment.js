@@ -20,9 +20,8 @@ module.exports = function(environment) {
   };
 
   ENV['mapbox'] = {
-    accessToken: '',
-    mapId: '',
-    mapTag: 'map'
+    accessToken: 'pk.eyJ1IjoiYnJhZG1vc2siLCJhIjoiUHhRZG5tWSJ9.XnTPPXa1xuDJIY2vlyGRfg',
+    mapId: 'bradmosk.lc4ji0oa'
   };
 
   if (environment === 'development') {
