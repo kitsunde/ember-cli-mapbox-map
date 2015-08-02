@@ -36,10 +36,13 @@ export default Ember.Component.extend({
     Ember.Mapbox.markerLayer = L.mapbox.featureLayer(markers).addTo(Ember.Mapbox.map);
     Ember.Mapbox.map.fitBounds(Ember.Mapbox.markerLayer.getBounds());
     Ember.Mapbox.markerLayer.eachLayer((marker) => {
-      marker.bindPopup(this.get('popupContent'));
+      if(this.get('popupContent')) {
+        let popupContent = this.get('popupContent');
+        marker.bindPopup(popupContent(marker));
+      }
       if(this.get('customIcons')) {
         marker.setIcon(L.icon(marker.feature.properties.icon));
-      };
+      }
     });
   }
 });
