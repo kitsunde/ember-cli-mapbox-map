@@ -1,4 +1,4 @@
-# Ember-cli-mapbox
+# Ember-cli-mapbox-map
 
 This README outlines the details of collaborating on this Ember addon.
 

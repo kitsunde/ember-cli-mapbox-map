@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-mapbox',
+  name: 'ember-cli-mapbox-map',
 
   contentFor: function(type) {
     if (type === 'head-footer') {
