@@ -1,1 +1,1 @@
-export { default, initialize } from 'ember-cli-mapbox/instance-initializers/mapbox';
+export { default, initialize } from 'ember-cli-mapbox-map/instance-initializers/mapbox';
