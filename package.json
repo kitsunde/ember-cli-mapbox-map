@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-mapbox-map",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mapbox map component for Ember.js web apps.",
   "directories": {
     "doc": "doc",
