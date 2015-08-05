@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-mapbox/services/mapbox';
+export { default } from 'ember-cli-mapbox-map/services/mapbox';
