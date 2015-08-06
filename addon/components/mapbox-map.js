@@ -18,6 +18,8 @@ export default Ember.Component.extend({
         type: 'get'
       }).then((results) => {
         this.set('markers', results);
+      }, (reason) => {
+        Ember.Logger.error('Failed to load markers from remote resource passed to \'model\' property.')
       });
     }
   },
