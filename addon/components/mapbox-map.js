@@ -12,12 +12,14 @@ export default Ember.Component.extend({
   customIcons: false,
 
   didReceiveAttrs: function() {
-    return ajax({
-      url: this.get('model'),
-      type: 'get'
-    }).then((results) => {
-      this.set('markers', results);
-    });
+    if(this.get('model')) {
+      return ajax({
+        url: this.get('model'),
+        type: 'get'
+      }).then((results) => {
+        this.set('markers', results);
+      });
+    }
   },
 
   didInsertElement: function() {
