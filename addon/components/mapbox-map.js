@@ -8,6 +8,11 @@ export default Ember.Component.extend({
   markers: null,
   attributionControl: true,
   zoomControl: true,
+  center: null,
+  zoom: null,
+  minZoom: null,
+  maxZoom: null,
+  maxBounds: null,
   popupContent: null,
   customIcons: false,
 
@@ -28,7 +33,12 @@ export default Ember.Component.extend({
     L.mapbox.accessToken = this.mapbox.get('accessToken');
     Ember.Mapbox.map = L.mapbox.map('map', this.mapbox.get('mapId'), {
       attributionControl: this.get('attributionControl'),
-      zoomControl: this.get('zoomControl')
+      zoomControl: this.get('zoomControl'),
+      center: this.get('centerPosition'),
+      zoom: this.get('zoom'),
+      minZoom: this.get('minZoom'),
+      maxZoom: this.get('maxZoom'),
+      maxBounds: this.get('maxBounds'),
     });
   },
 
