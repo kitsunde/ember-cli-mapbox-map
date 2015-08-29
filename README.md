@@ -1,4 +1,5 @@
 # ember-cli-mapbox-map
+[![Code Climate](https://codeclimate.com/github/igorpreston/ember-cli-mapbox-map/badges/gpa.svg)](https://codeclimate.com/github/igorpreston/ember-cli-mapbox-map)
 
 This addon is a go-to solution to include and configure [Mapbox.js](https://www.mapbox.com/mapbox.js/) library into Ember and easily use it as a native component.
 
