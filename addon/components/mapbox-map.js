@@ -48,7 +48,9 @@ export default Ember.Component.extend({
     }
     let markers = this.get('markers');
     Ember.Mapbox.markerLayer = L.mapbox.featureLayer(markers).addTo(Ember.Mapbox.map);
-    Ember.Mapbox.map.fitBounds(Ember.Mapbox.markerLayer.getBounds());
+    if(!this.get('centerPosition')) {
+      Ember.Mapbox.map.fitBounds(Ember.Mapbox.markerLayer.getBounds());
+    }
     Ember.Mapbox.markerLayer.eachLayer((marker) => {
       if(this.get('popupContent')) {
         let popupContent = this.get('popupContent');
