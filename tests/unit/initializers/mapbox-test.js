@@ -8,11 +8,11 @@ import {
 import Ember from 'ember';
 import { initialize } from 'ember-cli-mapbox/initializers/mapbox';
 
-describe('MapboxInitializer', function() {
+describe('MapboxInitializer', function(){
   var container, application;
 
-  beforeEach(function() {
-    Ember.run(function() {
+  beforeEach(function(){
+    Ember.run(function(){
       application = Ember.Application.create();
       container = application.__container__;
       application.deferReadiness();
@@ -20,7 +20,7 @@ describe('MapboxInitializer', function() {
   });
 
   // Replace this with your real tests.
-  it('works', function() {
+  it('works', function(){
     initialize(container, application);
 
     // you would normally confirm the results of the initializer here

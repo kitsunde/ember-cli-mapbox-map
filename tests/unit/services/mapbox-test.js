@@ -12,9 +12,9 @@ describeModule(
     // Specify the other units that are required for this test.
     // needs: ['service:foo']
   },
-  function() {
+  function(){
     // Replace this with your real tests.
-    it('exists', function() {
+    it('exists', function(){
       var service = this.subject();
       expect(service).to.be.ok;
     });

@@ -1,6 +1,6 @@
 /* jshint node: true */
 
-module.exports = function(environment) {
+module.exports = function(environment){
   var ENV = {
     modulePrefix: 'dummy',
     environment: environment,
@@ -24,7 +24,7 @@ module.exports = function(environment) {
     mapId: 'bradmosk.lc4ji0oa'
   };
 
-  if (environment === 'development') {
+  if(environment === 'development'){
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -32,7 +32,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
-  if (environment === 'test') {
+  if(environment === 'test'){
     // Testem prefers this...
     ENV.baseURL = '/';
     ENV.locationType = 'none';
@@ -44,7 +44,7 @@ module.exports = function(environment) {
     ENV.APP.rootElement = '#ember-testing';
   }
 
-  if (environment === 'production') {
+  if(environment === 'production'){
 
   }
 
