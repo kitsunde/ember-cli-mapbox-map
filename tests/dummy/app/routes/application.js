@@ -46,6 +46,6 @@ export default Ember.Route.extend({
         'marker-color': '#BE9A6B',
         'marker-symbol': 'cafe'
       }
-    }]
+    }];
   }
 });
